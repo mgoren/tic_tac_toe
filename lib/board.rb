@@ -42,6 +42,11 @@ class Board
     @lines_to_check.each() do |line|
       line_winners = []
       line.each() do |space|
+        if space.marked_by() == nil
+          puts("nil")
+        else
+          puts(space.marked_by())
+        end
         line_winners.push(space.marked_by())
       end
       if line_winners[0] == line_winners[1] && line_winners[1] == line_winners[2] && line_winners[0] != nil

@@ -1,0 +1,5 @@
+require('rspec')
+require('game')
+require('board')
+require('space')
+require('player')
